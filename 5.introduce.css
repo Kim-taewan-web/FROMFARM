@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Pretendard-Regular';
+    line-height: 20px;
+    color: #4c4438;
+}
+
+#fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    transition: all 0.5s;
+}
+
+#top {
+    background-color: #566d38;
+    height: 25px;
+}
+
+.top_inner {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+#top ul {
+    float: right;
+}
+
+#top ul li {
+    margin: 2px 12px;
+    float: left;
+}
+
+#top li a {
+    color: #c4d0a5;
+}
+
+#top li a:hover {
+    color: #aed2c0;
+    text-decoration: underline;
+}
+
+#header {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.header_inner {
+    width: 1320px;
+    margin: 0 auto;
+    height: 100px;
+}
+
+
+.header_inner>ul>li {
+    float: left;
+    font-family: 'Gugi', cursive;
+    padding: 40px 0 0;
+    font-size: 28px;
+    text-align: center;
+    position: relative;
+}
+
+.header_inner>ul>li>a {
+    display: block;
+    padding: 0 50px;
+
+}
+
+.header_inner>ul>li:nth-child(3) {
+    padding-top: 8px;
+}
+
+.header_inner>ul>li>a:hover {
+    color: #506831;
+}
+
+.nav li:nth-child(1) {
+    padding-top: 40px;
+
+}
+
+.sub {
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+
+.nav li:hover .sub {
+    display: block;
+}
+
+.sub li a {
+    display: block;
+    padding: 20px 0;
+    text-align: center;
+    color: #ffffff;
+    background-color: #0303036d;
+    font-size: 20px;
+
+}
+
+.sub li a:hover {
+    color: #000000;
+}
+
+/* 자바스크립트로 추가될 클래스 */
+#fixed.nav-up {
+    top: -125px;
+    /* 높이만큼 주기 */
+}
+
+.main {
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.main img {
+    width: 100%;
+}
+
+.main h1 {
+    position: absolute;
+    top: 40%;
+    left: 39%;
+    line-height: 60px;
+    text-align: center;
+    font-size: 50px;
+    color: #ffffff;
+    text-shadow: 5px 5px 5px rgb(0 0 0 / 30%);
+}
+
+.main1 {
+    font-family: 'Gugi', cursive;
+}
+
+.con1 {
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+    height: 400px;
+    padding-top: 50px;
+    background: url(./images/greencycle.png) no-repeat 42% 18%;
+
+}
+
+.con1 h1 {
+    font-family: 'gugi';
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+.con1 p {
+    line-height: 30px;
+}
+
+.power {
+    font-weight: bold;
+}
+
+.con2 {
+    width: 1320px;
+    margin: 0 auto;
+    height: 700px;
+    position: relative;
+}
+
+.con2 p {
+    line-height: 20px;
+}
+
+.con2 a:nth-child(1) {
+    position: absolute;
+    top: 0%;
+    left: 15%;
+}
+
+.con2 a:nth-child(2) {
+    position: absolute;
+    top: 0%;
+    left: 39%;
+}
+
+
+.con2 a:nth-child(3) {
+    position: absolute;
+    top: 0%;
+    left: 66%;
+}
+
+.con2 a:nth-child(4) {
+    position: absolute;
+    top: 47%;
+    left: 15%;
+}
+
+.con2 a:nth-child(5) {
+    position: absolute;
+    top: 30%;
+    left: 39%;
+}
+
+.con2 a:nth-child(6) {
+    position: absolute;
+    top: 60%;
+    left: 39%;
+}
+
+.con2 a:nth-child(7) {
+    position: absolute;
+    top: 47%;
+    left: 67%;
+}
+
+.con2 a div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 98%;
+    box-sizing: border-box;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.con2 a div:hover {
+    opacity: 1;
+    transition: opacity 1s;
+
+}
+
+.con2 a:nth-child(1) div:hover {
+    background: url(./images/int/1-1.png) no-repeat 55% 73px rgba(0, 0, 0, 0.3);
+    background-size: 100px;
+    text-align: center;
+    border-radius: 72% 0 0 0;
+    padding-top: 235px;
+    font-size: 15px;
+    line-height: 1;
+    color: #ccd8bc;
+    font-weight: bold;
+}
+
+.con2 a:nth-child(2) div:hover {
+    background: url(./images/int/2-1.png) no-repeat 50% 15px rgba(0, 0, 0, 0.6);
+    background-size: 100px;
+    text-align: center;
+    border-radius: 0 110px 0 0;
+    padding-top: 157px;
+    font-size: 15px;
+    line-height: 1;
+    color: #ccd8bc;
+    font-weight: bold;
+}
+
+.con2 a:nth-child(3) div:hover {
+    background: url(./images/int/3-1.png) no-repeat 50% 45px rgba(255, 255, 255, 0.7);
+    background-size: 100px;
+    text-align: center;
+    border-radius: 151px;
+    padding-top: 235px;
+    font-size: 15px;
+    line-height: 1;
+    color: #705635;
+    font-weight: bold;
+}
+
+.con2 a:nth-child(4) div:hover {
+    background: url(./images/int/4-1.png) no-repeat 50% 49px rgba(255, 255, 255, 0.7);
+    background-size: 100px;
+    text-align: center;
+    border-radius: 150px;
+    padding-top: 230px;
+    font-size: 15px;
+    line-height: 1;
+    color: #705635;
+    font-weight: bold;
+}
+
+.con2 a:nth-child(5) div:hover {
+    background: url(./images/int/5-1.png) no-repeat 20% 19px rgba(255, 255, 255, 0.6);
+    background-size: 200px;
+    text-align: center;
+    border-radius: 0;
+    padding-top: 140px;
+    padding-left: 136px;
+    font-size: 15px;
+    line-height: 1;
+    color: #715737;
+    font-weight: bold;
+}
+
+.con2 a:nth-child(6) div:hover {
+    background: url(./images/int/6-1.png) no-repeat 50% 20px rgba(0, 0, 0, 0.3);
+    background-size: 100px;
+    text-align: center;
+    border-radius: 0 0 0 70px;
+    padding-top: 160px;
+    font-size: 15px;
+    line-height: 1;
+    color: #ccd8bc;
+    font-weight: bold;
+}
+
+.con2 a:nth-child(7) div:hover {
+    background: url(./images/int/7-1.png) no-repeat 50% 31px rgba(0, 0, 0, 0.6);
+    background-size: 100px;
+    text-align: center;
+    border-radius: 0 0 207px 0;
+    padding-top: 192px;
+    font-size: 15px;
+    line-height: 1;
+    color: #ccd8bc;
+    font-weight: bold;
+}
+
+
+
+#footer {
+    padding-top: 70px;
+    background: url(./images/background1.png) no-repeat;
+    background-size: cover;
+    height: 250px;
+}
+
+.backgruond {
+    width: 100%;
+    margin: 0 auto;
+    height: 1000px;
+
+}
+
+.footer_inner {
+    width: 1320px;
+    margin: 0 auto;
+    height: 100px;
+    margin-top: 70px;
+    position: relative;
+}
+
+.footer_inner>a {
+    float: left;
+}
+
+.footer_inner div {
+    float: right;
+    text-align: center;
+}
+
+.footer_inner ul li {
+    float: left;
+    padding-right: 10px;
+    font-size: 16px;
+}
+
+.footer_inner ul li a:hover {
+    color: #cdd9bd;
+}
+
+.footer_inner p {
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    margin-top: 70px;
+    clear: both;
+}

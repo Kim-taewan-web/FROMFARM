@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.con{
+    margin: 100px;
+}
+.popup{
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    display: none;
+}
+.popup img{
+    display: block;
+}
+.popup p{
+    background-color: #000;
+    text-align: right;
+    padding-right: 10px;
+}

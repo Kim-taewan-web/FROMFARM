@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Pretendard-Regular';
+    line-height: 20px;
+    color: #4c4438;
+}
+
+#fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    transition: all 0.5s;
+}
+
+#top {
+    background-color: #566d38;
+    height: 25px;
+}
+
+.top_inner {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+#top ul {
+    float: right;
+}
+
+#top ul li {
+    margin: 2px 12px;
+    float: left;
+}
+
+#top li a {
+    color: #c4d0a5;
+}
+
+#top li a:hover {
+    color: #aed2c0;
+    text-decoration: underline;
+}
+
+#header {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.header_inner {
+    width: 1320px;
+    margin: 0 auto;
+    height: 100px;
+}
+
+
+.header_inner>ul>li {
+    float: left;
+    font-family: 'Gugi', cursive;
+    padding: 40px 0 0;
+    font-size: 28px;
+    text-align: center;
+    position: relative;
+}
+
+.header_inner>ul>li>a {
+    display: block;
+    padding: 0 50px;
+
+}
+
+.header_inner>ul>li:nth-child(3) {
+    padding-top: 8px;
+}
+
+.header_inner>ul>li>a:hover {
+    color: #506831;
+}
+
+.nav li:nth-child(1) {
+    padding-top: 40px;
+
+}
+
+.sub {
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+
+.nav li:hover .sub {
+    display: block;
+}
+
+.sub li a {
+    display: block;
+    padding: 20px 0;
+    text-align: center;
+    color: #ffffff;
+    background-color: #0303036d;
+    font-size: 20px;
+
+}
+
+.sub li a:hover {
+    color: #000000;
+}
+
+/* 자바스크립트로 추가될 클래스 */
+#fixed.nav-up {
+    top: -125px;
+    /* 높이만큼 주기 */
+}
+
+
+.main {
+    width: 100%;
+    position: relative;
+}
+
+.main>h1 {
+    font-family: 'gugi';
+    position: absolute;
+    top: 50%;
+    left: 44%;
+    font-size: 50px;
+    color: #ffffff;
+    text-shadow: 5px 5px 5px rgb(0 0 0 / 30%);
+}
+
+
+.con1 {
+    height: 400px;
+    padding-top: 50px;
+    background: url(./images/greencycle.png) no-repeat 36.5% 11%;
+}
+
+.con1_inner {
+    width: 1320px;
+    margin: 30px auto;
+    text-align: left;
+    background: url(./images/fromfarm/listlilu.png) no-repeat 1% 241px;
+    height: 400px;
+}
+
+.con1_inner h1 {
+    margin-bottom: 150px;
+    font-family: 'gugi';
+    text-align: center;
+}
+
+.con1_inner h2 {
+    padding: 10px 20px;
+    background-color: #566d38;
+    border-radius: 30px;
+    color: #fff;
+    font-family: 'gugi';
+    display: inline-block;
+}
+
+.con1_inner p {
+    padding-left: 140px;
+    padding-top: 40px;
+    line-height: 30px;
+}
+
+.con2 {
+    height: 400px;
+}
+
+.con2_inner {
+    width: 1320px;
+    margin: 0 auto;
+    height: 700px;
+}
+
+.con2_inner img {
+    position: absolute;
+    top: 20px;
+    left: calc(50% - 35px);
+}
+
+.con2_inner h2 {
+    text-align: left;
+    margin: 70px 0;
+}
+
+
+.con2_inner p {
+    float: left;
+    width: 123px;
+    height: 161px;
+    border: 0px solid #000000;
+    box-shadow: 2px 2px 2px #ccc;
+    background-color: #f6eadb;
+    border-radius: 70px 70px 5px 5px;
+    box-sizing: border-box;
+    margin: 0 21px;
+    padding-top: 95px;
+    text-align: center;
+    position: relative;
+}
+
+.con2_inner p:nth-child(1) {
+    background-color: #f6ece1;
+}
+
+
+
+.con2_inner span {
+    font-size: 14px;
+}
+
+
+
+
+.con3 {
+    overflow: hidden;
+    position: relative;
+    height: 1400px;
+}
+
+.con3_inner {
+    width: 1320px;
+    margin: 0 auto;
+
+}
+
+.left:nth-child(1) {
+    background-color: #ced7bc;
+
+}
+
+.left:nth-child(3) {
+    background-color: #b7cb8c;
+}
+
+.left {
+    width: 1145px;
+    padding: 30px 0;
+    border-radius: 0 225px 225px 0;
+    margin-left: -295px;
+    height: 245px;
+    margin-bottom: 20px;
+}
+
+.left img {
+    float: right;
+    height: 245px;
+    padding-right: 25px;
+    margin-left: 40px;
+    ;
+}
+
+.left p {
+    float: right;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 40px;
+    padding: 5px 70px 30px;
+    line-height: 20px;
+
+}
+
+.right {
+    width: 1145px;
+    background-color: #b7cb8c;
+    padding: 30px 0;
+    border-radius: 225px 0 0 225px;
+    margin-left: 475px;
+    height: 245px;
+    margin-bottom: 20px;
+}
+
+.right img {
+    margin-left: 25px;
+}
+
+.right p {
+    margin-right: 35%;
+    margin-top: -255px;
+    float: right;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 40px;
+    padding: 5px 41px 25px 55px;
+    line-height: 20px;
+}
+
+.bold {
+    line-height: 60px;
+    font-family: 'gugi';
+    font-size: 26px;
+    color: #705534;
+}
+
+.bold1 {
+    line-height: 70px;
+    font-family: 'gugi';
+    font-size: 26px;
+    color: #705534;
+}
+
+.con4 {
+    height: 1000px;
+    background: url(./images/greencycle.png) no-repeat 45% 0%;
+    margin-bottom: 100px;
+}
+
+.con4_inner {
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 35px 0;
+}
+
+.con4_inner h1 {
+    font-family: 'gugi';
+    margin-bottom: 40px;
+}
+
+.con4_inner p {
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+.sns {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.sns img {
+    margin: 0 43px 0;
+    box-shadow: 1px 2px 4px #000;
+    border-radius: 20px;
+    animation: snsmove1 1s linear infinite alternate;
+}
+
+@keyframes snsmove1 {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+
+.notice {
+    width: 1320px;
+    margin: 50px auto;
+    height: 250px;
+    padding-left: 90px;
+}
+
+.notice h4 {
+    color: #fff;
+    background-color: #506831;
+    padding: 5px 20px;
+    width: 60px;
+    border-radius: 20px;
+    font-family: 'Gugi';
+    font-size: 20px;
+}
+
+.notice b {
+    line-height: 40px;
+}
+
+.notice p {
+    line-height: 26px;
+}
+
+
+
+
+#footer {
+    padding-top: 70px;
+    background: url(./images/background1.png) no-repeat;
+    background-size: cover;
+    height: 250px;
+}
+
+.backgruond {
+    width: 100%;
+    margin: 0 auto;
+    height: 1000px;
+
+}
+
+.footer_inner {
+    width: 1320px;
+    margin: 0 auto;
+    height: 100px;
+    margin-top: 70px;
+    position: relative;
+}
+
+.footer_inner>a {
+    float: left;
+}
+
+.footer_inner div {
+    float: right;
+    text-align: center;
+}
+
+.footer_inner ul li {
+    float: left;
+    padding-right: 10px;
+    font-size: 16px;
+}
+
+.footer_inner ul li a:hover {
+    color: #cdd9bd;
+}
+
+.footer_inner p {
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    margin-top: 70px;
+    clear: both;
+}

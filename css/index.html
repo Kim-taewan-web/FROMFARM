@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>띠 애니메이션</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        .marquee, .marquee2{
+            border-top: 5px solid #ff0012;
+            border-bottom: 5px solid #ff0012;
+            height: 34px;
+            padding: 10px 0;
+            overflow: hidden;
+            position: relative;
+            margin: 20px 0;
+        }
+        .marquee div{
+            width: 200%;
+            height: 34px;
+            background: url(images/main_marquee_txt.png) repeat-x;
+            position: absolute;
+            animation: marquee 7s linear infinite;
+        }
+        @keyframes marquee{
+            0%{left: 0;}
+            100%{left: -100%;}
+        }
+
+        .marquee2 div{
+            width: 200%;
+            height: 34px;
+            background: url(images/main_marquee_txt.png) repeat-x;
+            position: absolute;
+            animation: marquee2 7s linear infinite;
+        }
+        @keyframes marquee2{
+            0%{right: 0;}
+            100%{right: -100%;}
+        }
+    </style>
+</head>
+<body>
+    <div class="marquee">
+        <div></div>
+    </div>
+
+    <div class="marquee2">
+        <div></div>
+    </div>
+</body>
+</html>
